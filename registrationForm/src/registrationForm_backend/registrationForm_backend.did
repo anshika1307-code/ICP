@@ -1,0 +1,11 @@
+type UserData = record {
+  username: text;
+  email: text;
+};
+service : {
+  register_user: (UserData) -> (text);
+  get_user_data: () -> (record {
+    username: text;
+    email: text;
+  });
+}

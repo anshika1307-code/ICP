@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "registrationForm_backend": {
+      "candid": "src/registrationForm_backend/registrationForm_backend.did",
+      "package": "registrationForm_backend",
+      "type": "rust"
+    },
+    "registrationForm_frontend": {
+      "dependencies": [
+        "registrationForm_backend"
+      ],
+      "source": [
+        "src/registrationForm_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "registrationForm_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
